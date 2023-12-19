@@ -135,8 +135,8 @@ typedef struct
     bool carcel;
 } Jugador;
 
-Jugador jugador1 = {0, '*', 3000, false};
-Jugador jugador2 = {0, '!', 50, false};
+Jugador jugador1 = {0, '*', 1500, false};
+Jugador jugador2 = {0, '!', 1500, false};
 
 void imp_menu(int jugador)
 {
@@ -667,7 +667,7 @@ int actualizar(int turno)
 
     // Carga una imagen desde un archivo
     Tigr *casa1;
-    casa1 = tigrLoadImage("./house1.png");
+    casa1 = tigrLoadImage("./images/house1.png");
 
     if (!casa1)
     {
@@ -677,7 +677,7 @@ int actualizar(int turno)
 
     // Carga una imagen desde un archivo
     Tigr *casa2;
-    casa2 = tigrLoadImage("./house2.png");
+    casa2 = tigrLoadImage("./images/house2.png");
 
     if (!casa2)
     {
